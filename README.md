@@ -23,3 +23,10 @@ ansible自动化安装k8s集群，包含kube-vip
 2.测试网络
 `ansible all -m ping`
 `ansible 192.168.88.101 -m ping`
+3.执行脚本
+```bash
+ansible all -i [hosts] -m [shell/script/ping] -f [num]
+-i host文件
+-m 模块，shell命令，script本地脚本, ping命令
+-f 并发数
+```
