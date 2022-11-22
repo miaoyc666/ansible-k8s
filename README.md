@@ -18,12 +18,12 @@ ansible自动化安装k8s集群，包含kube-vip
 2.如果不想使用密码，可以使用ssh公钥，自行生成ssh公钥并拷贝到/etc/ansible/hosts中的主机上。  
 
 ##### 4.命令
-1.查看主机列表
-`ansible all --list`
-2.测试网络
-`ansible all -m ping`
-`ansible 192.168.88.101 -m ping`
-3.执行脚本
+1.查看主机列表  
+`ansible all --list`  
+2.测试网络  
+`ansible all -m ping`  
+`ansible 192.168.88.101 -m ping`  
+3.执行脚本  
 ```bash
 ansible all -i [hosts] -m [shell/script/ping] -f [num]
 -i host文件
