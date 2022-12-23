@@ -17,7 +17,7 @@ ansible自动化安装k8s集群，包含kube-vip
 1.添加host到`/etc/ansible/hosts`, 格式如下：`192.168.88.101 ansible_ssh_port=22  ansible_ssh_user=root ansible_ssh_pass=12345678`;  
 2.如果不想使用密码，可以使用ssh公钥，自行生成ssh公钥并拷贝到/etc/ansible/hosts中的主机上。  
 
-##### 4.命令
+#### 4.命令
 1.查看主机列表  
 `ansible all --list`  
 2.测试网络  
@@ -30,3 +30,4 @@ ansible all -i [hosts] -m [shell/script/ping] -f [num]
 -m 模块，shell命令，script本地脚本, ping命令
 -f 并发数
 ```
+
